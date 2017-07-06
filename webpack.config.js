@@ -1,5 +1,4 @@
 const path = require('path');
-const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
 module.exports = {
   context: path.resolve(__dirname, './src'),
 
@@ -40,6 +39,6 @@ module.exports = {
       // it used the same host and port.
       // https://github.com/facebookincubator/create-react-app/issues/2272#issuecomment-302832432
       console.log("Hi");
-      app.use(noopServiceWorkerMiddleware());
+     // app.use(noopServiceWorkerMiddleware());
     },
 }
